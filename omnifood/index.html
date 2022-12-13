@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="tanım"
+      content="Omnifood yılda 365 gün, yapay zeka destekli size uygun sağlıklı menüler sunar. Kişisel zevklerinize ve ihtiyasçlarınıza göre uyarlanır."/>
+      <!--her html sayfasında mutlaka olması gereken kod-->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Omnifood &mdash; Bir daha asla yemek yapmayın!</title>
+
+    <link rel="icon" href="img/favicon.png">
+    <link rel="apple-dokunma-ikonu" href="img/apple-touch-icon.png">
+    <link rel="manifest" href="menifest.webmanifest">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/genel.css" />
+    <link rel="stylesheet" href="css/sorgular.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img src="img/omnifood-logo.png" alt="Omnifood logo" class="logo" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-listesi">
+          <li><a class="main-nav-link" href="#nasıl">Nasıl çalışır</a></li>
+          <li><a class="main-nav-link" href="#menüler">Menüler</a></li>
+          <li>
+            <a class="main-nav-link" href="#referans-galeri">Referanslar</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#fiyatlandırma">Fiyatlandırma</a>
+          </li>
+          <li>
+            <a class="main-nav-link nav-cta" href="#kaydol">Ücretsiz deneyin</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn--mobil-nav">
+        <ion-icon class="mobil-nav-icon" name="menu-outline"></ion-icon>
+        <ion-icon class="mobil-nav-icon" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="bölüm-herosu">
+        <div class="hero">
+          <div class="hero-yazı-kutusu">
+            <h1 class="ana-başlık">
+              Her gün kapınıza gelen sağlıklı bir yemek
+            </h1>
+            <p class="hero-tanıtımı">
+              Yeniden sağlıklı beslenmenizi sağlayacak, yılda 365 gün akıllı
+              yemek aboneliği. Kişisel zevklerinize ve beslenme ihtiyaçlarınıza
+              göre uyarlanmıştır.
+            </p>
+            <a href="#kaydol" class="btn btn--full margin--right-sm"
+              >Sağlıklı beslenmeye başla
+            </a>
+            <a href="#nasıl" class="btn btn--taslak"
+              >Daha fazla bilgi için &darr;
+            </a>
+            <div class="teslim-edilenler">
+              <div class="müşteri-img">
+                <img
+                  src="img/customers/customer-1.jpg"
+                  alt="Müşteri fotoğrafı"
+                />
+                <img
+                  src="img/customers/customer-2.jpg"
+                  alt="Müşteri fotoğrafı"
+                />
+                <img
+                  src="img/customers/customer-3.jpg"
+                  alt="Müşteri fotoğrafı"
+                />
+                <img
+                  src="img/customers/customer-4.jpg"
+                  alt="Müşteri fotoğrafı"
+                />
+                <img
+                  src="img/customers/customer-5.jpg"
+                  alt="Müşteri fotoğrafı"
+                />
+                <img
+                  src="img/customers/customer-6.jpg"
+                  alt="Müşteri fotoğrafı"
+                />
+              </div>
+              <p class="müşteri-metin">
+                Şuana kadar <span>250.000+</span> yemek teslim ettik!
+              </p>
+            </div>
+          </div>
+          <div class="hero-img-kutusu">
+            <picture>
+              <source srcset="img/hero.webp" type="image/webp"/>
+              
+              <source srcset="img/hero-min.png" type="image/png"/>
+
+              <img
+              src="img/hero-min.png"
+              alt="Yemek yiyen bir kadın, saklama kabında bir yemek, masada yemek kaseleri"
+              class="hero-img"
+            />
+            </picture>
+            
+          </div>
+        </div>
+      </section>
+      <section class="öne-çıkan-bölüm">
+        <div class="konteynır">
+          <h2 class="öne-çıkan-başlık">As featured in</h2>
+          <div class="logolar">
+            <img src="img/logos/techcrunch.png" alt="Techcrunch logo" />
+            <img
+              src="img/logos/business-insider.png"
+              alt="Bussiner insider logo"
+            />
+            <img
+              src="img/logos/the-new-york-times.png"
+              alt="The new york times logo"
+            />
+            <img src="img/logos/forbes.png" alt="Forbes logo" />
+            <img src="img/logos/usa-today.png" alt="USA today logo" />
+          </div>
+        </div>
+      </section>
+      <section class="section-how" id="nasıl">
+        <div class="konteynır">
+          <span class="alt-başlık">Nasıl çalışır?</span>
+          <h2 class="ikincil-başlık">3 basit adımda günlük sağlık dozunuz</h2>
+        </div>
+        <div class="konteynır grid grid--2-sıra grid--center-dikey">
+          <!-- ADIM 01-->
+          <div class="adım-yazı-kutusu">
+            <p class="adım-numara">01</p>
+            <h3 class="üçüncül-başlık">
+              Bize neyi sevdiğinizi söyleyin (ve neyi sevmediğinizi)
+            </h3>
+            <p class="adım-açıklaması">
+              Bir daha asla ne yiyeceğinizi düşünerek zaman kaybetmeyin!
+              Omnifood AI, sadece sizin için %100 kişiselleştirilmiş bir
+              haftalık yemek planı oluşturur. Hangi diyeti uygularsanız
+              uygulayın, ihtiyacınız olan tüm besinleri ve vitaminleri almanız
+              sağlanır!
+            </p>
+          </div>
+          <div class="adım-img-kutusu">
+            <img
+              src="img/app/app-screen-1.png"
+              class="adım-img"
+              alt="iPhone uygulaması tercihler seçim ekranı"
+            />
+          </div>
+
+          <!-- ADIM 02-->
+          <div class="adım-img-kutusu">
+            <img
+              src="img/app/app-screen-2.png"
+              class="adım-img"
+              alt="iPhone uygulaması yemek onaylama plan ekranı"
+            />
+          </div>
+          <div class="adım-yazı-kutusu">
+            <p class="adım-numara">02</p>
+            <h3 class="üçüncül-başlık">Haftalık yemek planınızı onaylayın</h3>
+            <p class="adım-açıklaması">
+              Haftada bir kez, Omnifood AI tarafından sizin için oluşturulan
+              yemek planını onaylayın. Malzemeleri değiştirebilir, tüm öğünleri
+              değiştirebilir ve hatta kendi tariflerinizi ekleyebilirsiniz.
+            </p>
+          </div>
+
+          <!-- ADIM 03-->
+          <div class="adım-yazı-kutusu">
+            <p class="adım-numara">03</p>
+            <h3 class="üçüncül-başlık">Yemeklerizi uygun bir zamana alın</h3>
+            <p class="adım-açıklaması">
+              Şehirdeki en iyi şefler ile birlikte seçtiğiniz yemeği her gün
+              sizin için en uygun zamanda kapınıza teslim edeceğiz. Teslimat
+              programını ve adresi günlük olarak değiştirebilirsiniz!
+            </p>
+          </div>
+          <div class="adım-img-kutusu">
+            <img
+              src="img/app/app-screen-3.png"
+              class="adım-img"
+              alt="iPhone uygulaması teslim için seçim ekranı"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="yemek-bölümü" id="menüler">
+        <div class="konteynır center-text">
+          <span class="alt-başlık">Menüler</span>
+          <h2 class="ikincil-başlık">
+            Omnifood AI size 5.000+ tarif arasından seçim yapar
+          </h2>
+        </div>
+        <div class="konteynır grid grid--3-sıra margin-bottom-md">
+          <div class="menü">
+            <img src="img/meals/meal-1.jpg" alt="Japon sosu" class="menü-img" />
+            <div class="menü-içeriği">
+              <div class="menü-etiketleri">
+                <span class="etiket etiket--vejeteryan">Vejeteryan</span>
+              </div>
+              <p class="menü-başlığı">Japon Sosu</p>
+              <ul class="menü-verileri">
+                <li class="menü-özellikleri">
+                  <ion-icon class="menü-ikon" name="flame-outline"></ion-icon
+                  ><span><strong>650</strong> kalori</span>
+                </li>
+                <li class="menü-özellikleri">
+                  <ion-icon
+                    class="menü-ikon"
+                    name="restaurant-outline"
+                  ></ion-icon
+                  ><span>NutriScore &reg; <strong>74</strong></span>
+                </li>
+                <li class="menü-özellikleri">
+                  <ion-icon class="menü-ikon" name="star-outline"></ion-icon
+                  ><span>Değerlendirme <strong>4.9</strong>(537)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="menü">
+            <img src="img/meals/meal-2.jpg" alt="Japon sosu" class="menü-img" />
+            <div class="menü-içeriği">
+              <div class="menü-etiketleri">
+                <span class="etiket etiket--vegan">Vegan</span>
+                <span class="etiket etiket--paleo">Paleo</span>
+              </div>
+              <p class="menü-başlığı">Avokado Salatası</p>
+              <ul class="menü-verileri">
+                <li class="menü-özellikleri">
+                  <ion-icon class="menü-ikon" name="flame-outline"></ion-icon
+                  ><span><strong>400</strong> kalori</span>
+                </li>
+                <li class="menü-özellikleri">
+                  <ion-icon
+                    class="menü-ikon"
+                    name="restaurant-outline"
+                  ></ion-icon
+                  ><span>NutriScore &reg; <strong>92</strong></span>
+                </li>
+                <li class="menü-özellikleri">
+                  <ion-icon class="menü-ikon" name="star-outline"></ion-icon
+                  ><span>Değerlendirme <strong>4.8</strong>(441)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="diyetler">
+            <h3 class="üçüncül-başlık">Yapılabilir diyetler:</h3>
+            <ul class="liste">
+              <li class="liste-öğesi">
+                <ion-icon class="liste-ikon" name="checkmark-outline"></ion-icon
+                ><span>Vejeteryan</span>
+              </li>
+              <li class="liste-öğesi">
+                <ion-icon class="liste-ikon" name="checkmark-outline"></ion-icon
+                ><span>Vegan</span>
+              </li>
+              <li class="liste-öğesi">
+                <ion-icon class="liste-ikon" name="checkmark-outline"></ion-icon
+                ><span>Peskatarya</span>
+              </li>
+              <li class="liste-öğesi">
+                <ion-icon class="liste-ikon" name="checkmark-outline"></ion-icon
+                ><span>Glütensiz</span>
+              </li>
+              <li class="liste-öğesi">
+                <ion-icon class="liste-ikon" name="checkmark-outline"></ion-icon
+                ><span>Laktozsuz</span>
+              </li>
+              <li class="liste-öğesi">
+                <ion-icon class="liste-ikon" name="checkmark-outline"></ion-icon
+                ><span>Ketojenik</span>
+              </li>
+              <li class="liste-öğesi">
+                <ion-icon class="liste-ikon" name="checkmark-outline"></ion-icon
+                ><span>Paleo</span>
+              </li>
+              <li class="liste-öğesi">
+                <ion-icon class="liste-ikon" name="checkmark-outline"></ion-icon
+                ><span>Düşük FODMAP</span>
+              </li>
+              <li class="liste-öğesi">
+                <ion-icon class="liste-ikon" name="checkmark-outline"></ion-icon
+                ><span>Çocuk Dostu</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="konteynır tüm-tarifler">
+          <a href="#" class="link">Tüm yemek tarifleri &rarr;</a>
+        </div>
+      </section>
+      <section class="referanslar-bölümü" id="referans-galeri">
+        <div class="referanslar-konteynır">
+          <span class="alt-başlık">Referanslar</span>
+          <h2 class="ikincil-başlık">Bir kere denerseniz, bırakamazsınız</h2>
+          <div class="referanslar">
+            <figure class="referans">
+              <img
+                class="referans-img"
+                alt="Musab Bulut'un fotoğrafı"
+                src="img/customers/dave.jpg"
+              />
+              <blockquote class="referans-yazısı">
+                Elle sipariş vermek zorunda kalmadan bile ucuz, sağlıklı ve
+                lezzetli yemekler! Gerçekten büyülü hissettiriyor.
+              </blockquote>
+              <p class="referans-ismi">&mdash; Hüseyin Bulut</p>
+            </figure>
+
+            <figure class="referans">
+              <img
+                class="referans-img"
+                alt="Emir Cintosun'un fotoğrafı"
+                src="img/customers/ben.jpg"
+              />
+              <blockquote class="referans-yazısı">
+                AI algoritması ha ri ka! Her seferinde benim için doğru
+                yemekleri seçer. Artık yemek için endişelenmemek harika!
+              </blockquote>
+              <p class="referans-ismi">&mdash; Emir Cintosun</p>
+            </figure>
+
+            <figure class="referans">
+              <img
+                class="referans-img"
+                alt="Bora Tosun'un fotoğrafı"
+                src="img/customers/steve.jpg"
+              />
+              <blockquote class="referans-yazısı">
+                Omnifood bir hayat kurtarıcıdır! Daha yeni bir şirket kurdum,
+                yani yemek pişirmek için zamanım yok. Artık günlük öğünlerim
+                olmadan yaşayamam!
+              </blockquote>
+              <p class="referans-ismi">&mdash; Bora Tosun</p>
+            </figure>
+
+            <figure class="referans">
+              <img
+                class="referans-img"
+                alt="Müge Yılmaz'ın fotoğrafı"
+                src="img/customers/hannah.jpg"
+              />
+              <blockquote class="referans-yazısı">
+                Tüm aile için Omnifood aldım ve çok zaman kazandırıyor! Artı,
+                her şey organik ve vegan.
+              </blockquote>
+              <p class="referans-ismi">&mdash; Müge Yılmaz</p>
+            </figure>
+          </div>
+        </div>
+        <div class="galeri">
+          <figure class="galeri-item">
+            <img src="img/gallery/gallery-1.jpg" alt="Tabakta yemek resimi" />
+          </figure>
+          <figure class="galeri-item">
+            <img src="img/gallery/gallery-2.jpg" alt="Tabakta yemek resimi" />
+          </figure>
+          <figure class="galeri-item">
+            <img src="img/gallery/gallery-3.jpg" alt="Tabakta yemek resimi" />
+          </figure>
+          <figure class="galeri-item">
+            <img src="img/gallery/gallery-4.jpg" alt="Tabakta yemek resimi" />
+          </figure>
+          <figure class="galeri-item">
+            <img src="img/gallery/gallery-5.jpg" alt="Tabakta yemek resimi" />
+          </figure>
+          <figure class="galeri-item">
+            <img src="img/gallery/gallery-6.jpg" alt="Tabakta yemek resimi" />
+          </figure>
+          <figure class="galeri-item">
+            <img src="img/gallery/gallery-7.jpg" alt="Tabakta yemek resimi" />
+          </figure>
+          <figure class="galeri-item">
+            <img src="img/gallery/gallery-8.jpg" alt="Tabakta yemek resimi" />
+          </figure>
+          <figure class="galeri-item">
+            <img src="img/gallery/gallery-9.jpg" alt="Tabakta yemek resimi" />
+          </figure>
+          <figure class="galeri-item">
+            <img src="img/gallery/gallery-10.jpg" alt="Tabakta yemek resimi" />
+          </figure>
+          <figure class="galeri-item">
+            <img src="img/gallery/gallery-11.jpg" alt="Tabakta yemek resimi" />
+          </figure>
+          <figure class="galeri-item">
+            <img src="img/gallery/gallery-12.jpg" alt="Tabakta yemek resimi" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="fiyatlandırma-bölümü" id="fiyatlandırma">
+        <div class="konteynır">
+          <span class="alt-başlık">Fİyatlandırma</span>
+          <h2 class="ikincil-başlık">
+            Hemen şimdi sağlıklı beslenmeye başlayın
+          </h2>
+        </div>
+        <div class="konteynır grid grid--2-sıra margin-bottom-md">
+          <div class="fiyatlandırma-planı fiyatlandırma-planı--başlangıç">
+            <header class="fiyatlandırma-başlığı">
+              <p class="plan-ismi">Başlangıç</p>
+              <p class="plan-fiyatı">1199<span>₺</span></p>
+              <p class="plan-text">1 ay boyunca günde 1 menü sadece 40₺!</p>
+            </header>
+            <ul class="liste">
+              <li class="liste-öğesi">
+                <ion-icon class="liste-ikon" name="checkmark-outline"></ion-icon
+                ><span>Günde 1 öğün</span>
+              </li>
+              <li class="liste-öğesi">
+                <ion-icon class="liste-ikon" name="checkmark-outline"></ion-icon
+                ><span>11:00-21:00 sipariş</span>
+              </li>
+              <li class="liste-öğesi">
+                <ion-icon class="liste-ikon" name="checkmark-outline"></ion-icon
+                ><span>Ücretsiz teslimat</span>
+              </li>
+              <li class="liste-öğesi">
+                <ion-icon class="liste-ikon" name="close-outline"></ion-icon>
+                <span>--------</span>
+              </li>
+            </ul>
+            <div class="plan-kaydı">
+              <a href="#" class="btn btn--full">Sağlıklı beslenmeye başla</a>
+            </div>
+          </div>
+          <div class="fiyatlandırma-planı fiyatlandırma-planı--fullpaket">
+            <header class="fiyatlandırma-başlığı">
+              <p class="plan-ismi">Full paket</p>
+              <p class="plan-fiyatı">2099<span>₺</span></p>
+              <p class="plan-text">1 ay boyunca günde 2 menü sadece 70₺!</p>
+            </header>
+            <ul class="liste">
+              <li class="liste-öğesi">
+                <ion-icon class="liste-ikon" name="checkmark-outline"></ion-icon
+                ><span>Günde <strong>2 öğün</strong> </span>
+              </li>
+              <li class="liste-öğesi">
+                <ion-icon class="liste-ikon" name="checkmark-outline"></ion-icon
+                ><span> <strong>7/24</strong> sipariş</span>
+              </li>
+              <li class="liste-öğesi">
+                <ion-icon class="liste-ikon" name="checkmark-outline"></ion-icon
+                ><span>Ücretsiz teslimat</span>
+              </li>
+
+              <li class="liste-öğesi">
+                <ion-icon class="liste-ikon" name="checkmark-outline"></ion-icon
+                ><span>En güncel tarifler</span>
+              </li>
+            </ul>
+            <div class="plan-kaydı">
+              <a href="#" class="btn btn--full">Sağlıklı beslenmeye başla</a>
+            </div>
+          </div>
+        </div>
+        <div class="konteynır grid">
+          <aside class="plan--ek-bilgi">
+            Fiyatlara tüm vergiler dahildir. Tüm paketleri istediğiniz zaman
+            iptal edebilirsiniz.
+          </aside>
+        </div>
+        <div class="konteynır grid grid--4-sıra">
+          <div class="özellik">
+            <ion-icon class="özellik-icon" name="infinite-outline"></ion-icon>
+            <p class="özellik-başlığı">Bir daha yemek yapmayın!</p>
+            <p class="özellik-text">
+              Abonelikleriniz, tatiller dahil olmak üzere yılın 365 gününü
+              kapsar.
+            </p>
+          </div>
+          <div class="özellik">
+            <ion-icon class="özellik-icon" name="nutrition-outline"></ion-icon>
+            <p class="özellik-başlığı">Yerli ve organik malzemeler</p>
+            <p class="özellik-text">
+              Aşçılarımız yemeklerinizi hazırlamak için yalnızca yerli, taze ve
+              organik ürünler kullanır.
+            </p>
+          </div>
+          <div class="özellik">
+            <ion-icon class="özellik-icon" name="leaf-outline"></ion-icon>
+            <p class="özellik-başlığı">Geri dönüşümlü paketler</p>
+            <p class="özellik-text">
+              Tüm ortaklarımız, yemeklerinizi paketlemek için yeniden
+              kullanılabilir paketler kullanır.
+            </p>
+          </div>
+          <div class="özellik">
+            <ion-icon class="özellik-icon" name="pause-outline"></ion-icon>
+            <p class="özellik-başlığı">İstediğiniz zaman dondurun</p>
+            <p class="özellik-text">
+              Tatile mi gidiyorsunuz? Sadece aboneliğinizi dondurun ve
+              kullanılmayan günlerinizi geri ödeyelim.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="kayıt-bölümü" name="sing-up" netfily>
+        <div class="konteynır">
+          <div class="kayıt">
+            <div class="kayıt-text-kutusu">
+              <h2 class="ikincil-başlık">İlk yemeğiniz bizden!</h2>
+              <p class="kayıt-text">
+                Sağlıklı, lezzetli ve zahmetsiz yemekler sizleri bekliyor. Hemen
+                sağlıklı beslenmeye başlayın! İstediğiniz zaman iptal edebilir
+                veya dondurabilirsiniz.
+              </p>
+
+              <form class="kayıt-form" name="sing-up" netfily>
+                <div>
+                  <label for="full-name">Ad ve Soyad</label>
+                  <input
+                    id="ad-soyad"
+                    type="text"
+                    name="full-name"
+                    placeholder="Hüseyin Bulut"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="e-posta">E-posta adresi</label>
+                  <input
+                    id="e-posta"
+                    type="email"
+                    name="email"
+                    placeholder="me@example.com"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="nereden">Bizi nerden duydunuz?</label>
+                  <select id="nereden" name="nereden" required>
+                    <option value="">Lütfen bir seçenek seçin:</option>
+                    <option value="arkadaşlarımdan">
+                      Arkadaşlarımdan veya Ailemden
+                    </option>
+                    <option value="reklamlar">Reklamlardan</option>
+                    <option value="youtube">Youtube videolarından</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="diğerleri">Diğerleri</option>
+                  </select>
+                </div>
+
+                <button class="btn btn--form">Şimdi kaydol</button>
+              </form>
+            </div>
+            <div
+              class="kayıt-img"
+              role="img"
+              aria-label="Yemek yiyen kadın"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="alt-bilgi">
+      <div class="konteynır grid grid-alt-bilgi">
+        <div class="logo-stn">
+          <a href="#" class="alt-bilgi-logo">
+            <img src="img/omnifood-logo.png" alt="Omnifood logo" class="logo" />
+          </a>
+
+          <ul class="sosyal-bağlantılar">
+            <li>
+              <a class="alt-bilgi-link" href="#"
+                ><ion-icon class="sosyal-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="alt-bilgi-link" href="#"
+                ><ion-icon class="sosyal-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="alt-bilgi-link" href="#"
+                ><ion-icon class="sosyal-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="telif-hakkı">
+            Telif hakkı &copy; <span class="yıl">2027</span> Omnifood, Inc.'e
+            aittir. Tüm hakları saklıdır.
+          </p>
+        </div>
+        <div class="adres-stn">
+          <p class="alt-bilgi-başlık">Bize ulaşın</p>
+          <address class="iletişim">
+            <p class="adres">
+              Kuzguncuk, İcadiye Cd. No:155, 34674 Üsküdar/İstanbul
+            </p>
+            <p>
+              <a class="alt-bilgi-link" href="tel:(+90)212-201-6370"
+                >(+90)212 201 6370</a
+              ><br />
+              <a class="alt-bilgi-link" href="mailto:hello@omnifood.com"
+                >hello@omnifood.com</a
+              >
+            </p>
+          </address>
+        </div>
+        <nav class="nav-stn">
+          <p class="alt-bilgi-başlık">Hesaplar</p>
+          <ul class="alt-bilgi-nav">
+            <li><a class="alt-bilgi-link" href="#">Hesap oluştur</a></li>
+            <li><a class="alt-bilgi-link" href="#">Kaydol</a></li>
+            <li><a class="alt-bilgi-link" href="#">iOS uygulaması</a></li>
+            <li><a class="alt-bilgi-link" href="#">Android uygulaması</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-stn">
+          <p class="alt-bilgi-başlık">Şirket</p>
+          <ul class="alt-bilgi-nav">
+            <li><a class="alt-bilgi-link" href="#">Omnifood hakkında</a></li>
+            <li>
+              <a class="alt-bilgi-link" href="#">Bizimle çalışmak için</a>
+            </li>
+            <li><a class="alt-bilgi-link" href="#">Yemek ortakları</a></li>
+            <li><a class="alt-bilgi-link" href="#">Kariyer</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-stn">
+          <p class="alt-bilgi-başlık">Hesaplar</p>
+          <ul class="alt-bilgi-nav">
+            <li><a class="alt-bilgi-link" href="#">Yönetim kurulu</a></li>
+            <li><a class="alt-bilgi-link" href="#">Yardım Merkezi</a></li>
+            <li><a class="alt-bilgi-link" href="#">Gizlilik ve şartlar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,657 @@
+/********************************** */
+/*BAŞLIK(HEADER)*/
+/********************************** */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fdf2e9;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+/********************************** */
+/*NAVİGATİON*/
+/********************************** */
+
+.main-nav-listesi {
+  list-style: none;
+  display: flex;
+  gap: 4.8rem;
+  align-items: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  transition: all 0.3s;
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+
+.btn--mobil-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.mobil-nav-icon {
+  width: 4.8rem;
+  height: 4.8rem;
+  color: #333;
+}
+
+.mobil-nav-icon[name="close-outline"] {
+  display: none;
+}
+
+/* YAPIŞIK NAVİGASYON */
+
+.yapışkan .header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 8rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.932);
+  z-index: 100;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.06);
+}
+
+.yapışkan .bölüm-herosu {
+  margin-top: 8rem;
+}
+
+/***********************************/
+/*KAHRAMAN HERO) BÖLÜMÜ*/
+/***********************************/
+
+.bölüm-herosu {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-tanıtımı {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.teslim-edilenler {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  margin-top: 8rem;
+}
+
+.müşteri-img {
+  display: flex;
+}
+
+.müşteri-img img {
+  /* kare olması için yüksekliği ve genişliği aynı yaptık*/
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+
+.müşteri-metin {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.müşteri-metin span {
+  color: #cf711f;
+  font-weight: 700;
+}
+
+/***********************************/
+/*FEATURED İN SECTİON*/
+/***********************************/
+
+.öne-çıkan-bölüm {
+  margin: 4.8rem 0 3.2rem 0;
+}
+
+.öne-çıkan-başlık {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  line-height: 0.75;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+
+.logolar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logolar img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+/***********************************/
+/*LAZIM OLACAKLAR*/
+/***********************************/
+.section-how {
+  padding: 9.6rem 0;
+}
+
+.adım-açıklaması {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.adım-numara {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.adım-img-kutusu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.adım-img-kutusu::before,
+.adım-img-kutusu::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.adım-img-kutusu::before {
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  z-index: -2;
+}
+
+.adım-img-kutusu::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+  z-index: -1;
+}
+
+.adım-yazı-kutusu {
+  align-items: center;
+}
+
+.adım-img {
+  width: 35%;
+}
+
+/***********************************/
+/*MENÜ BÖLÜMÜ*/
+/***********************************/
+
+.yemek-bölümü {
+  padding: 9.6rem 0;
+}
+
+.menü {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+  border-radius: 1.2rem;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.menü:hover {
+  transform: translate(0, -1.6rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.2);
+}
+
+.menü-içeriği {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.menü-etiketleri {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.7rem;
+}
+
+.etiket {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+
+  color: #333;
+  font-weight: 600;
+  border-radius: 10rem;
+}
+
+.etiket--vejeteryan {
+  background-color: #51cf66;
+}
+
+.etiket--vegan {
+  background-color: #74b816;
+}
+
+.etiket--paleo {
+  background-color: #ffd43b;
+}
+
+.menü-başlığı {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.menü-verileri {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.menü-özellikleri {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.menü-ikon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
+
+.menü-img {
+  width: 100%;
+}
+
+.tüm-tarifler {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/***********************************/
+/*REFERANSLAR BÖLÜMÜ*/
+/***********************************/
+
+.referanslar-bölümü {
+  background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 53fr 47fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.referanslar-konteynır {
+  padding: 9.6rem;
+}
+
+.referanslar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.referans-img {
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.referans-yazısı {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.referans-ismi {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+
+.referanslar-başlığı {
+  grid-column: 1 / -1;
+}
+
+.galeri {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.galeri-item {
+  overflow: hidden;
+}
+
+.galeri-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.galeri-item img:hover {
+  transform: scale(1.1);
+}
+
+/***********************************/
+/**FİYATLANDIRMA BÖLÜMÜ**/
+/***********************************/
+
+.fiyatlandırma-bölümü {
+  padding: 9.6rem 0;
+}
+
+.fiyatlandırma-başlığı {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.fiyatlandırma-planı {
+  border-radius: 1.1rem;
+  padding: 4.8rem;
+  width: 75%;
+}
+
+.fiyatlandırma-planı--başlangıç {
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+  padding: 4.6rem;
+}
+
+.fiyatlandırma-planı--fullpaket {
+  background-color: #fdf2e9;
+  position: relative;
+  overflow: hidden;
+}
+
+.fiyatlandırma-planı--fullpaket::after {
+  content: "En İyİ seçİm";
+  position: absolute;
+  top: 7%;
+  right: -11%;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333;
+  background-color: #ffd43b;
+  padding: 0.9rem 5.4rem 0.9rem 5.4rem;
+  transform: rotate(45deg);
+}
+
+.plan-ismi {
+  color: #cf711f;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+
+.plan-fiyatı {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.plan-fiyatı span {
+  font-size: 3.6rem;
+  font-weight: 500;
+  margin-left: 0.8rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.plan-kaydı {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.plan--ek-bilgi {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.özellik-icon {
+  color: #e67e22;
+  background-color: #fdf2e9;
+  padding: 1.6rem;
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-bottom: 3.2rem;
+  border-radius: 50%;
+}
+
+.özellik-başlığı {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.özellik-text {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+/***********************************/
+/**KAYIT BÖLÜMÜ**/
+/***********************************/
+
+.kayıt-bölümü {
+  padding: 4.8rem 0 12.8rem 0;
+}
+
+.kayıt {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+  border-radius: 1.1rem;
+  background-image: linear-gradient(to left bottom, #eb984e, #e6722e);
+  overflow: hidden;
+}
+
+.kayıt-text-kutusu {
+  color: #45260a;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.kayıt .ikincil-başlık {
+  color: #45260a;
+  margin-bottom: 3.2rem;
+}
+
+.kayıt-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.kayıt-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.kayıt-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.kayıt-form input,
+.kayıt-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  border-radius: 9px;
+  background-color: #fdf2e9;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.kayıt-form input::placeholder {
+  color: #aaa;
+}
+
+.kayıt-img {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.3),
+      rgba(230, 113, 46, 0.3)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.kayıt *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5rem rgba(253, 242, 233, 0.5);
+}
+
+/***********************************/
+/**ALT BİLGİ BÖLÜMÜ**/
+/***********************************/
+
+.alt-bilgi {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.grid-alt-bilgi {
+  grid-template-columns: 1.5fr 1.5fr 1.1fr 1.1fr 1.1fr;
+}
+
+.logo-stn {
+  display: flex;
+  flex-direction: column;
+}
+
+.alt-bilgi-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.sosyal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.sosyal-bağlantılar {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.alt-bilgi-başlık {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.alt-bilgi-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.alt-bilgi-link:link,
+.alt-bilgi-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.alt-bilgi-link:hover,
+.alt-bilgi-link:active {
+  color: #555;
+}
+
+.iletişim {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+
+.adres {
+  margin-bottom: 5.6rem;
+}
+
+.telif-hakkı {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #767676;
+  margin-top: auto;
+}
